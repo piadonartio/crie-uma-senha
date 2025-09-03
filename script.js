@@ -47,5 +47,11 @@ function geraSenha (){
     }
     campoSenha.value = senha;
     classificaSenha(alfabeto.lenght);
-    
-}
+    }
+    function classificaSenha(tamanhoAlfabeto){
+        let entropia = tamanhaSenha * Math.Log2(tamanhoAlfabeto) ;
+        forcaSenha.classList.remove('fraca', 'media', 'forte');
+        if (entropia > 57){
+            
+        }
+    }
