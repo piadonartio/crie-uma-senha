@@ -7,15 +7,15 @@ const forcaSenha = document.querySelector('.forca');
 botoes[0].onclick = diminuiTamanho;
 botoes[1].onclick = aumentaTamanho;
 function diminuiTamanho (){
-    if (tamanhaSenha > 1){
-        tamanhaSenha--;
+    if (tamanhoSenha > 1){
+        tamanhoSenha--;
     }
     numeroSenha.textContent= tamanhoSenha;
     geraSenha();
 }
 function aumentaTamanhoTamanho (){
-    if (tamanhaSenha > 20){
-        tamanhaSenha++;
+    if (tamanhoSenha < 20){
+        tamanhoSenha++;
     }
     numeroSenha.textContent= tamanhoSenha;
     geraSenha();
