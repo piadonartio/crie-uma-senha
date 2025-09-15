@@ -26,7 +26,7 @@ body{
 #campo-senha{
     background-color: var(--fundo-senha);
     border: none;
-    color: var(branco);
+    color: var(--branco);
     font-family: var(--fonte-principal);
     font-size: 40px;
     width: 70%;
@@ -39,21 +39,21 @@ body{
     font-size: 24px;
 }
 img{
-    width: 15%;
-    height: 10%;
+    width: 4%;
+    height: 4%;
 }
 #campo-senha:focus{
-    outline: none;}
+    outline: none;
+}
 .parametro{
     background-color: var(--fundo-texto);
     border: 2px solid var(--branco);
     margin-top: 32px;
+    padding: 24px;
 }
 .parametro-titulo{
     font-family: var(--fonte-principal);
     font-size: 28px;
-
-
 }
 .parametro-senha-titulo{
     font-size: 24px;
@@ -89,7 +89,7 @@ label{
     font-size: 20px;
 }
 @media screen and (min-width: 768px) {
-    .botoes{
+    .parametro-coluna-senha{
         flex-direction: row;
     }
 }
@@ -97,24 +97,23 @@ label{
     width: 20px;
     height: 20px;
     cursor: pointer;
-
 }
 .barra{
     background-color: var(--fundo-senha);
-    heigth: 30px;
+    height: 30px;
     width: 100%;
 }
 .fraca{
     height: 30px;
     width: 25%;
-    background-color: #ff0000;
+    background-color: #460a0a;
     position: relative;
     bottom: 30px;
 }
 .media{
     height: 30px;
-    width:50%;
-    background-color: #f6ff00;
+    width: 50%;
+    background-color: #a8b404;
     position: relative;
     bottom: 30px;
 }
